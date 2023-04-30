@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading"><h1>Calculate me!</h1></div>
+    <center>
+        <div class="container">
+            <div class="input">
+            <input type="text" id="result">
+        </div>
+        <div class="row">
+            <button class="button" onclick="display('7')">7</button>
+            <button class="button" onclick="display('8')">8</button>
+            <button class="button" onclick="display('9')">9</button>
+            <button class="button" onclick="clearbtn('')">C</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="display('4')">4</button>
+            <button class="button" onclick="display('5')">5</button>
+            <button class="button" onclick="display('6')">6</button>
+            <button class="button" onclick="display('*')">x</button>
+        </div>
+         <div class="row">
+            <button class="button" onclick="display('1')">1</button>
+            <button class="button" onclick="display('2')">2</button>
+            <button class="button" onclick="display('3')">3</button>
+            <button class="button" onclick="display('+')">+</button>
+        </div>
+         <div class="row">
+            <button class="button" onclick="display('0')">0</button>
+            <button class="button" onclick="display('/')">/</button>
+            <button class="button" onclick="calculate()">=</button>
+            <button class="button" onclick="display('-')">-</button>
+        </div>
+    </div>
+</center>
+
+<script>
+function display(value){
+ document.getElementById("result").value +=value;
+}
+function clearbtn(){
+    document.getElementById("result").value = " ";
+}
+function calculate(){
+   let add = document.getElementById("result").value;
+   let sub = eval(add);
+   let total = document.getElementById("result").value = sub;
+}
+
+
+
+
+
+
+
+
+
+    // function clearbtn(){
+    //     document.getElementById("result").value = " ";
+    // }
+    // function display(value){
+    //     document.getElementById("result").value += value;
+    // }
+    // function calculate(){
+    //     var a = document.getElementById("result").value;
+    //     var b = eval(a)
+    //     document.getElementById("result").value = b;
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>        
+
+
+
+
+
+    
+    
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <center>
+    <div class="main">
+            <div class="container">
+                <input type="text" name="" id="result">
+                <button onclick="clearbtn('')">clear</button>
+            </div>
+            <div class="contain">
+                <button onclick="display('1')">1</button>
+                <button onclick="display('2')">2</button>
+                <button onclick="display('3')">3</button>
+                <button onclick="display('4')">4</button><br>
+                <button onclick="display('5')">5</button>
+                <button onclick="display('6')">6</button>
+                <button onclick="display('7')">7</button>
+                <button onclick="display('8')">8</button><br>
+                <button onclick="display('9')">9</button>
+                <button onclick="display('0')">0</button>
+                <button onclick="display('+')">+</button>
+                <button onclick="display('-')">-</button><br>
+                <button onclick="display('*')">x</button>
+                <button onclick="display('/')">/</button>
+                <button onclick="calculate()">=</button>
+            </div>
+        </div>
+    </center> -->
+</body>
+</html>
